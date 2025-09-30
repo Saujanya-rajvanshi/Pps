@@ -81,3 +81,39 @@ printf("add=%d",add);
 }
 
 ```
+
+```c
+
+#include<stdio.h>
+#include<conio.h>
+
+void pal(int n);
+
+void main(){
+    int a;
+    printf("\n Enter a no. ");
+    scanf("%d",&a);
+    pal(a);
+}
+
+void pal(int n){
+    int m,d;
+    int r=0;
+    m=n;
+    while(m>0){
+        d=m%10;
+        r=r*10+d;
+        m=m/10;
+        
+    }
+    if(n==r){
+        printf("\n Palindrome no.");
+        
+    }
+    else{
+        printf("\n Not Palindrome no.");
+        
+    }
+
+}
+```
