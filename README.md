@@ -176,3 +176,33 @@ int fac(int n){
 }
 ```
 
+### swapping numbers
+
+```c
+#include <stdio.h>
+#include<conio.h>
+
+void swap(int a, int b);
+
+void main(){
+    int a,b;
+    printf("enter first no.");
+    scanf("%d",&a);
+    printf("enter second no.");
+    scanf("%d",&b);
+    swap(a,b); //actual parameter
+    printf("main fun value of a is=%d",a);
+    printf("main fun value of b is=%d",b);
+}
+
+void swap(int a, int b){
+    int temp;
+    temp = a;
+    a=b;
+    b=temp;
+    printf("after swaping first no. =%d",a);
+    printf("\n");
+    printf("after swaping sec no. =%d",b);
+}
+```
+
