@@ -16,9 +16,8 @@ void add(){
     result=n1+n2;
     printf("sum of two numbers is %d\n", result);
 }
-```# Pps
+```
 
-### 2
 ```c
 #include <stdio.h>
 #include <conio.h>
