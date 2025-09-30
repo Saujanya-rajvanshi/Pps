@@ -206,9 +206,9 @@ void swap(int a, int b){
 }
 ```
 
-###calculating age
+### calculating age
 
-```
+```c
 #include<stdio.h>
 #define age(a,b) a-b
 
