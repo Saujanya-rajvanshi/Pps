@@ -117,3 +117,33 @@ void pal(int n){
 
 }
 ```
+
+### reversing a number 
+```c
+#include<stdio.h>
+#include<conio.h>
+
+void rev();
+
+void main(){
+    rev();
+    getch();
+    
+    return 0;
+}
+
+void rev(){
+    int a;
+    printf("\n Enter a no.");
+    scanf("%d",&a);
+    int m,d;
+    int r=0;
+    m=a;
+    while(m>0){
+        d=m%10;
+        r=r*10+d;
+        m=m/10;
+    }
+    printf("\n reverse no.=%d",r);
+}
+```
