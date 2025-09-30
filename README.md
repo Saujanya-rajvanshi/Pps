@@ -233,3 +233,15 @@ int main(){
 }
 
 ```
+
+### multiply 
+```c
+#include <stdio.h>
+#define multi(a,b) (a)*(b)
+#include <conio.h>
+
+void main(){
+    printf("%d",multi(10,20)+76);
+    getch;
+}
+```
