@@ -206,3 +206,13 @@ void swap(int a, int b){
 }
 ```
 
+###calculating age
+
+```
+#include<stdio.h>
+#define age(a,b) a-b
+
+int main(){
+    printf("your age =%d",age(2025,2006));
+}
+```
