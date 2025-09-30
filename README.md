@@ -216,3 +216,20 @@ int main(){
     printf("your age =%d",age(2025,2006));
 }
 ```
+
+###  greatest number 
+
+```c
+#include<conio.h>
+#include <stdio.h>
+
+#define MAX(a,b) if(a>b) \
+                    printf("%d is greater",a); \
+                    else \
+                    printf("%d is greater",b);
+int main(){
+    MAX(4,5);
+    return 0;
+}
+
+```
