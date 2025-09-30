@@ -45,3 +45,38 @@ for(i=1;i<21;i++){
 
 }
 ```
+
+```c#include <stdio.h>
+#include <conio.h>
+
+void add(int x, int y, int z,int u, int v);
+
+int main(){
+
+int a,b,c,d,e;
+printf("enter no. a");
+scanf("%d",&a);
+printf("enter no. b");
+scanf("%d",&b);
+printf("enter no. c");
+scanf("%d",&c);
+printf("enter no. d");
+scanf("%d",&d);
+printf("enter no. e");
+scanf("%d",&e);
+
+add(a,b,c,d,e);
+
+}
+
+void add(int x, int y, int z,int u,int v){
+
+int add;
+
+add = x+y+z+u+v;
+
+printf("add=%d",add);
+
+}
+
+```
