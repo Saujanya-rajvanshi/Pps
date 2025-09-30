@@ -46,7 +46,8 @@ for(i=1;i<21;i++){
 }
 ```
 
-```c#include <stdio.h>
+```c
+#include <stdio.h>
 #include <conio.h>
 
 void add(int x, int y, int z,int u, int v);
