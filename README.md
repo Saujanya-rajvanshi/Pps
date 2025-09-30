@@ -147,3 +147,32 @@ void rev(){
     printf("\n reverse no.=%d",r);
 }
 ```
+
+### factorial
+```c
+#include <stdio.h>
+#include<conio.h>
+
+int fac(int n);
+
+void main(){
+    int a;
+    int m;
+    printf("enter a");
+    scanf("%d",&a);
+    m=fac(a);
+    printf("factorial =%d",m);
+}
+
+int fac(int n){
+    int i;
+    int f=1;
+    for(i=1;i=n;i++){
+       f*=i;
+    }
+    return(f);
+}
+
+}
+```
+
