@@ -393,3 +393,26 @@ int main() {
     return 0;
 }
 ```
+
+```c
+#include <stdio.h>
+#include <conio.h>
+
+struct code{
+    int i;
+    char c;
+    struct code *ptr;
+};
+
+void main(){
+    struct code var1;
+    struct code var2;
+    var1.i =55;
+    var1.c ='A';
+    var1.ptr=NULL;
+    var2.i =66;
+    var2.c = 'B';
+    var1.ptr = &var2;
+    printf("\n %d %c", var1.ptr->i,var1.ptr->c);
+}
+```
