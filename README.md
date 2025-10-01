@@ -308,3 +308,57 @@ void main() {
 
 }
 ```
+
+```c
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+void main()
+{
+    int n;
+    int i;
+    int *ptr;
+    int *pqr;
+
+    printf("enter no. of values ");
+    scanf("%d",&n);
+
+    ptr = (int*) malloc(n * sizeof(int));
+    pqr = ptr;
+
+    printf("\n enter value =%d", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", ptr);
+        ptr++;
+    }
+
+    ptr = pqr;
+    printf("\n values are ");
+    for(i = 0; i < n; i++) {
+        printf("%d", *ptr);
+        ptr++;
+    }
+
+    printf("\n enter new no. of values ");
+    scanf("%d",&n);
+
+    ptr = (int*) realloc(pqr, n * sizeof(int));
+    pqr = ptr;
+
+    printf("\n enter value =%d", n);
+    for(i = 1; i <= n; i++) {
+        scanf("%d", ptr);
+        ptr++;
+    }
+
+    ptr = pqr;
+    printf("your values are");
+    for(i = 1; i <= n; i++) {
+        printf("\n %d", *pqr);
+        pqr++;
+    }
+}
+
+```
