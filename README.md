@@ -245,3 +245,36 @@ void main(){
     getch;
 }
 ```
+
+
+```c
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+    int i,j,n,k,temp,a[n];
+    printf("enter size of elements");
+    scanf("%d",&n);
+    printf("enter elements of array");
+    for(i=0;i<=n;i++){
+        scanf("%d",&a[n]);
+        
+    }
+    for(i=1;i<n;i++){
+        temp=a[i];
+        j=i-1;
+        while(temp>=0 && a[j]>temp){
+            a[j+1]=a[j];
+            j--;
+            
+        }
+    a[j+1]=temp;
+    }
+    for(i=0;i<=n;i++){
+        printf("%d",a[k]);
+        
+    }
+
+}
+
+```
